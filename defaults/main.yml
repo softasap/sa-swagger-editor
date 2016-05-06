@@ -1,0 +1,9 @@
+---
+# defaults file for sa-swagger-editor
+  role_dir: "{{role_path}}"
+  apps_dir: "/home/{{ansible_user_id}}/apps"
+  install_dir: "{{apps_dir}}/swagger_editor"
+
+  option_install_nodejs: false
+  nodejs_version: "4.x" # 0.10 0.12 4.x 5.x
+

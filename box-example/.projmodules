@@ -1,0 +1,4 @@
+[submodule "roles/sa-swagger-editor"]
+        path = roles/sa-sa-swagger-editor
+        url = https://github.com/softasap/sa-swagger-editor.git
+

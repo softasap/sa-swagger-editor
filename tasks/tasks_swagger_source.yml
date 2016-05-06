@@ -1,0 +1,22 @@
+---
+
+#  - name: Swagger Editor | Check installed
+
+  - name: Swagger Editor | Ensure destination directory present
+    file: path="{{install_dir}}" state="directory"
+    tags:
+      - swagger-editor
+
+  - name: Swagger Editor | Clone repo
+    git: repo=https://github.com/swagger-api/swagger-editor.git dest="{{install_dir}}"
+    tags:
+      - swagger-editor
+
+  - name: Swagger Editor | Install dependencies
+    shell : npm install
+    args:
+      chdir: "{{install_dir}}"
+    tags:
+      - swagger-editor
+
+  - debug: msg="Run 'npm start' in {{install_dir}} to run editor"
