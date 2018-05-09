@@ -5,5 +5,4 @@
   install_dir: "{{apps_dir}}/swagger_editor"
 
   option_install_nodejs: false
-  nodejs_version: "4.x" # 0.10 0.12 4.x 5.x
-
+  nodejs_version: "6.x" # 0.10 0.12 4.x 5.x
